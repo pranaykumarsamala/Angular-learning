@@ -1,0 +1,55 @@
+<!-- <app-header></app-header> -->
+
+<!-- <nav>
+  <ul>
+    <li><a routerLink="/header">Header</a></li>
+    <li><a routerLink="/about">About</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet> -->
+
+<!-- 1.string Interpolation {{}}
+2.Property binding [innerHTML]="Data"
+3.Event binding (click)="method()"
+4.Two way data binding [ngModel] -->
+
+<h1>{{title}}</h1>
+<p>{{paragraph}}</p>
+
+<table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Cource</th>
+    <th>Village</th>
+  </tr>
+  <tr *ngFor="let student of studentList">
+    <!-- <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.cource}}</td>
+    <td>{{student.Vil}}</td> -->
+
+    <td [innerText]="student.id"></td>
+    <td [innerText]="student.name"></td>
+    <td [innerText]="student.cource"></td>
+    <td [innerText]="student.Vil"></td>
+  </tr>
+</table>
+
+<!-- <p style="background-color: blue;">This paragraph has its own background color.</p> -->
+
+<p [innerHTML]="htmlData"></p>
+
+<img [src]="img" alt="">
+
+<div [class]="setTrue ? 'heading' : 'heading2'">
+  {{paragraph}}
+</div>
+
+<div [ngClass]="{'d-flex justify-content-center align-items-center primary-bg text-dark' : setTrue, 'd-none' : !setTrue}">
+  {{paragraph}}
+</div>
+
+<div [ngStyle]="{'background-color': !setTrue ? 'yellow' : 'skyblue'}">
+  {{paragraph}}
+</div>
