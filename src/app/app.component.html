@@ -50,6 +50,26 @@
   {{paragraph}}
 </div>
 
-<div [ngStyle]="{'background-color': !setTrue ? 'yellow' : 'skyblue'}">
+<div [ngStyle]="{'color': color ? color : 'black'}">
   {{paragraph}}
 </div>
+
+
+
+<!-- Event binding -->
+
+<button type="button" (click)="increament()">Count {{counter}}</button>
+
+<select name="" id="" (change)="getVal($event)">
+  <option value="">Select</option>
+  <option value="green">Green</option>
+  <option value="red">Red</option>
+  <option value="orange">Orange</option>
+</select>
+
+<!-- input
+mouseover
+keyup
+keydown
+mouseout -->
+
