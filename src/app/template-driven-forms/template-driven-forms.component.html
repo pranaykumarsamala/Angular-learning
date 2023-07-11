@@ -1,0 +1,19 @@
+<div class="container row">
+    <div class="w-50">
+        <label for="">email</label>
+        <input type="email" [(ngModel)]="email">
+    </div>
+    <div class="w-50">
+        <label for="">name</label>
+        <input type="text" [(ngModel)]="name">
+    </div>
+    <div class="w-50">
+        <label for="">password</label>
+        <input type="password" [(ngModel)]="password">
+    </div>
+    <div class="w-50">
+        <label for="">confirm passwod</label>
+        <input type="password" [(ngModel)]="confirmpassword">
+    </div>
+    <button type="submit" (click)="registationData()">submit</button>
+</div>
