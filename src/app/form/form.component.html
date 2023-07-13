@@ -1,0 +1,27 @@
+<section class="form">
+    <div class="container">
+        <div class="form-data">
+            <h2>
+                {{form.head}}
+                <span>{{form.now}}</span>
+            </h2>
+            <div class="feedback">
+                <form action="">
+                    <div class="form-name">
+                        <label for="name" class="label">{{form.name}}</label>
+                        <input type="text" placeholder="Enter your Name" name="name" class="label">
+                    </div>
+                    <div class="form-email">
+                        <label for="email" class="emailid">{{form.email}}</label>
+                        <input type="text" placeholder="Enter your email" name="email" class="email">
+                    </div>
+                    <div class="form-message">
+                        <label for="message" class="messages">{{form.Message}}</label>
+                        <textarea placeholder="Enter your message" rows="4" cols="50" name="message" class="message"></textarea>
+                      </div>
+                      <button class="Submit">{{form.submit}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

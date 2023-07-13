@@ -1,0 +1,25 @@
+.footer{
+    color: #ffffff;
+    background-color: #333333;
+}
+.footer::before, .footer::after{
+    content: '';
+    display: table;
+}
+.footer .text{
+    text-align: center;
+    color: white;
+    margin: 49px auto;
+}
+.footer .link{
+    display: flex;
+    justify-content: center;
+}
+.footer .link p{
+    padding: 0px 10px;
+}
+
+.footer .link a{
+    color: #adcce9;
+    text-decoration: underline;
+}
