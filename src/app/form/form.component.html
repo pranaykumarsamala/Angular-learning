@@ -9,18 +9,37 @@
                 <form action="">
                     <div class="form-name">
                         <label for="name" class="label">{{form.name}}</label>
-                        <input type="text" placeholder="Enter your Name" name="name" class="label">
+                        <input type="text" placeholder="Enter your Name" name="name" class="label"
+                            [(ngModel)]="user.name">
                     </div>
                     <div class="form-email">
                         <label for="email" class="emailid">{{form.email}}</label>
-                        <input type="text" placeholder="Enter your email" name="email" class="email">
+                        <input type="text" placeholder="Enter your email" name="email" class="email"
+                            [(ngModel)]="user.email">
                     </div>
                     <div class="form-message">
                         <label for="message" class="messages">{{form.Message}}</label>
-                        <textarea placeholder="Enter your message" rows="4" cols="50" name="message" class="message"></textarea>
-                      </div>
-                      <button class="Submit">{{form.submit}}</button>
+                        <textarea placeholder="Enter your message" rows="4" cols="50" name="message" class="message"
+                            [(ngModel)]="user.message"></textarea>
+                    </div>
+                    <button class="Submit" (click)="getUser()">{{form.submit}}</button>
+                    <button class="Submit" (click)="reset()">Reset</button>
                 </form>
+
+                <table *ngIf="submit">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{user.name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{user.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>{{user.message}}</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

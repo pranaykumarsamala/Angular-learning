@@ -15,6 +15,7 @@ import { GutterComponent } from './gutter/gutter.component';
 import { RoleOfChefsComponent } from './role-of-chefs/role-of-chefs.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     GutterComponent,
     RoleOfChefsComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
