@@ -11,6 +11,7 @@ nav ={
   about: "About",
   land: "Landing",
   team: "Team",
-  connect:"Connect"
+  connect:"Connect",
+  list:"List",
 }
 }
