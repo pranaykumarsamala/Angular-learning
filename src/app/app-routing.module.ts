@@ -11,6 +11,8 @@ import { Filter1Component } from './filter1/filter1.component';
 import { Filter2Component } from './filter2/filter2.component';
 import { Filter3Component } from './filter3/filter3.component';
 import { Filter4Component } from './filter4/filter4.component';
+import { SubmenuComponent } from './submenu/submenu.component';
+import { Submenu2Component } from './submenu2/submenu2.component';
 
 const routes: Routes = [
   {
@@ -39,7 +41,17 @@ const routes: Routes = [
     children: [
       {
         path:'filter1',
-        component: Filter1Component
+        component: Filter1Component,
+        children: [
+          {
+            path:'submenu',
+            component: SubmenuComponent,
+          },
+          {
+            path:'submenu2',
+            component: Submenu2Component,
+          }
+        ]
       },
       {
         path:'filter2',

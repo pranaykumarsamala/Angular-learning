@@ -23,6 +23,9 @@ import { Filter1Component } from './filter1/filter1.component';
 import { Filter2Component } from './filter2/filter2.component';
 import { Filter3Component } from './filter3/filter3.component';
 import { Filter4Component } from './filter4/filter4.component';
+import { SubmenuComponent } from './submenu/submenu.component';
+import { Submenu2Component } from './submenu2/submenu2.component';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { Filter4Component } from './filter4/filter4.component';
     Filter1Component,
     Filter2Component,
     Filter3Component,
-    Filter4Component
+    Filter4Component,
+    SubmenuComponent,
+    Submenu2Component
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,9 @@ ul li a.active {
     color: #f78fb4 !important;
 }
 
-ul li>ul {
+/* ul li>ul {
     display: none;
 }
 ul li:hover ul {
     display: block;
-}
+} */
