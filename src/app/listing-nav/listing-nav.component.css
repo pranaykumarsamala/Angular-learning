@@ -2,9 +2,16 @@ ul  {
     list-style: none;
     margin: 0;
 }
-
+ul li{
+    margin: 10px;
+}
 ul li a.active {
     color: #f78fb4 !important;
+    padding: 10px;
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
 }
 
 /* ul li>ul {

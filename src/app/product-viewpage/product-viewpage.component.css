@@ -1,0 +1,52 @@
+
+.productview .product-image img{
+    height: 438px;
+    width: 438px;
+}
+.productview .product-image, .product-content{
+    margin-top: 20px;
+}
+.productview h6{
+    font-size: 28px;
+}
+.productview .about{
+font-weight: 600;
+}
+.productview h2{
+    font-size: 25px;
+}
+.productview  button, .productview .color{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 5px 20px;
+    margin-right: 8px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.productview .details h5{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 1rem 0rem;
+}
+.productview .cardbtn{
+    margin: 0rem 0rem;
+}
+.productview .cardbtn button{
+    background-color: rgb(238, 238, 23);
+    color: black;
+    font-size: 17px;
+    border: yellow;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5%;
+    padding: 10px 30px;
+}
+.productview .content h3{
+    font-size: 22px;
+    text-decoration: underline;
+}
+.productview .content ul {
+    list-style-type: disc;
+  }

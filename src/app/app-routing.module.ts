@@ -70,6 +70,13 @@ const routes: Routes = [
   {
     path:'',
     redirectTo: '/home',
+    // redirectTo: '/list/filter1',
+    pathMatch: 'full'
+  },
+  {
+    path:'list',
+    // component: ListingComponent,
+    redirectTo: '/list/filter1',
     pathMatch: 'full'
   },
   // wildcart root

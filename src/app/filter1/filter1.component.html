@@ -1,66 +1,44 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Brand</th>
-            <th scope="col">Price</th>
-            <th scope="col">About this item</th>
+            <th scope="col">{{filter1.heading1}}</th>
+            <th scope="col">{{filter1.heading2}}</th>
+            <th scope="col">{{filter1.heading3}}</th>
+            <th scope="col">{{filter1.heading4}}</th>
         </tr>
+
     </thead>
     <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>OnePlus Nord 3 5G (Misty Green, 8GB RAM, 128GB Storage)
-            </td>
-            <td>₹33,999</td>
-            <td>@Camera: 50MP Main Camera with Sony IMX890 (OIS supported), 8MP Ultrawide Camera with Sony IMX355 (FOV:
-                112 degree) and 2MP Macro lens f/2.4 and a FOV 89°; 16MP Front (Selfie) Camera with EIS supported</td>
+            <th scope="row">{{filter1.productId}}</th>
+            <td>{{filter1.productname}}</td>
+            <td>{{filter1.productprice}}</td>
+            <td>{{filter1.productinfr}}</td>
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage) with No Cost EMI & Additional Exchange
-                Offers
-            </td>
-            <td>₹12,999</td>
-            <td>@5G Ready powered by Qualcomm Snapdragon 865 Octa-Core processor, 8GB RAM, 128GB internal memory
-                expandable up to 1TB, Android 11.0 operating system and dual SIM</td>
+            <th scope="row">{{filter1.productId2}}</th>
+            <td>{{filter1.productname2}}</td>
+            <td>{{filter1.productprice2}}</td>
+            <td>{{filter1.productinfr2}}</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
-            <td>Nokia C12 Android 12 (Go Edition) Smartphone, All-Day Battery, 4GB RAM (2GB RAM + 2GB Virtual RAM) +
-                64GB Capacity | Light Mint
-            </td>
-            <td>₹5,699
-            </td>
-            <td>4GB RAM with Memory Extension | 2GB RAM + 2GB Virtual RAM
-                Fast performing octa-core processor
-                1 year replacement guarantee</td>
+            <th scope="row">{{filter1.productId3}}</th>
+            <td>{{filter1.productname3}}</td>
+            <td>{{filter1.productprice3}}</td>
+            <td>{{filter1.productinfr3}}</td>
         </tr>
         <tr>
-            <th scope="row">4</th>
-            <td>realme narzo 60 5G (Mars Orange,8GB+128GB) 90Hz Super AMOLED Display | Ultra Premium Vegan Leather
-                Design | with 33W
-            </td>
-            <td>₹17,999
-            </td>
-            <td>Snapdragon 695 5G Mobile Processor with a 6nm energy efficient process which will consume less power and
-                enhance the battery life</td>
+            <th scope="row">{{filter1.productId4}}</th>
+            <td>{{filter1.productname4}}</td>
+            <td>{{filter1.productprice4}}</td>
+            <td>{{filter1.productinfr4}}</td>
         </tr>
         <tr>
-            <th scope="row">5</th>
-            <td>iQOO Z7s 5G by vivo (Norway Blue, 8GB RAM, 128GB Storage) | Ultra Bright AMOLED Display | Snapdragon 695
-                5G 6nm Processor | 64 MP OIS
-            </td>
-            <td>₹25,699
-            </td>
-            <td>6000mAh lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty
-                for in-box accessories including batteries from the date of purchase</td>
+            <th scope="row">{{filter1.productId5}}</th>
+            <td>{{filter1.productname5}}</td>
+            <td>{{filter1.productprice5}}</td>
+            <td>{{filter1.productinfr5}}</td>
         </tr>
     </tbody>
 </table>
-<ul>
-    <li routerLink="submenu" routerLinkActive="active"><a>Sub1</a></li>
-    <li routerLink="submenu2" routerLinkActive="active"><a>Sub2</a></li>
-    
-</ul>
 <router-outlet></router-outlet>
