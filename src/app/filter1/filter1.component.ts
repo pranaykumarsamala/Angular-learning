@@ -31,5 +31,5 @@ export class Filter1Component {
     productname5: "iQOO Z7s 5G by vivo (Norway Blue, 8GB RAM, 128GB Storage) | Ultra Bright AMOLED Display | Snapdragon 695 5G 6nm Processor | 64 MP OIS",
     productprice5: "₹25,699",
     productinfr5: "6000mAh lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
-  }
+  };
 }

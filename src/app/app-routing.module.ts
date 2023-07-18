@@ -16,6 +16,10 @@ import { Submenu2Component } from './submenu2/submenu2.component';
 
 const routes: Routes = [
   {
+    path: 'product',
+    loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
+  },
+  {
     path: 'home',
     component: BannerComponent
   },
@@ -40,43 +44,42 @@ const routes: Routes = [
     component: ListingComponent,
     children: [
       {
-        path:'filter1',
+        path: 'filter1',
         component: Filter1Component,
         children: [
           {
-            path:'submenu',
+            path: 'submenu',
             component: SubmenuComponent,
           },
           {
-            path:'submenu2',
+            path: 'submenu2',
             component: Submenu2Component,
           }
         ]
       },
       {
-        path:'filter2',
+        path: 'filter2',
         component: Filter2Component
       },
       {
-        path:'filter3',
+        path: 'filter3',
         component: Filter3Component
       },
       {
-        path:'filter4',
+        path: 'filter4',
         component: Filter4Component
+      },
+      {
+        path: '',
+        redirectTo: '/list/filter1',
+        pathMatch: 'full'
       },
     ]
   },
   {
-    path:'',
+    path: '',
     redirectTo: '/home',
     // redirectTo: '/list/filter1',
-    pathMatch: 'full'
-  },
-  {
-    path:'list',
-    // component: ListingComponent,
-    redirectTo: '/list/filter1',
     pathMatch: 'full'
   },
   // wildcart root

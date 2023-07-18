@@ -26,6 +26,7 @@ import { Filter4Component } from './filter4/filter4.component';
 import { SubmenuComponent } from './submenu/submenu.component';
 import { Submenu2Component } from './submenu2/submenu2.component';
 import { ProductViewpageComponent } from './product-viewpage/product-viewpage.component';
+import { ProductModule } from './product/product.module';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { ProductViewpageComponent } from './product-viewpage/product-viewpage.co
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    FormsModule
+    FormsModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]

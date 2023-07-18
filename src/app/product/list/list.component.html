@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="d-flex justify-content-end my-2">
+        <button type="button" class="btn btn-primary" routerLink="/product/create">Create Product</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Price</th>
+                <th scope="col">Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                <td>{{product.id}}</td>
+                <td>{{product.productname}}</td>
+                <td>{{product.productprice}}</td>
+                <td>{{product.productInfo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
