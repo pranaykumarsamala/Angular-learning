@@ -5,6 +5,7 @@ import { ProductRoutingModule } from './product-routing.module';
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 import { ViewComponent } from './view/view.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ViewComponent } from './view/view.component';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    FormsModule
   ]
 })
 export class ProductModule { }

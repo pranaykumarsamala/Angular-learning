@@ -14,7 +14,9 @@
         <tbody>
             <tr *ngFor="let product of productList">
                 <td>{{product.id}}</td>
-                <td>{{product.productname}}</td>
+                <td>
+                    <a routerLink="/product/view/{{product.id}}">{{product.productname}}</a>
+                </td>
                 <td>{{product.productprice}}</td>
                 <td>{{product.productInfo}}</td>
             </tr>

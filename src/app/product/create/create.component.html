@@ -1,1 +1,37 @@
-<p>create works!</p>
+<form #productForm="ngForm" (ngSubmit)="submit(productForm)">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="" class="label">Product Name</label>
+                    <input type="text" name="productname" class="form-control" [(ngModel)]="productData.productname"
+                        required="true" #productname="ngModel" [ngClass]="productname.valid ? 'green': 'red'">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="">Product Price</label>
+                    <input type="text" name="productprice" class="form-control" [(ngModel)]="productData.productprice"
+                        required="true" #productprice="ngModel"  [ngClass]="productprice.valid ? 'green': 'red'">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="">Product Info</label>
+                    <textarea name="productInfo" id="" cols="30" rows="10" class="form-control"
+                        [(ngModel)]="productData.productInfo" required="true" #productInfo="ngModel"  [ngClass]="productInfo.valid ? 'green': 'red'"></textarea>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="">Product Image url</label>
+                    <input type="text" name="product_img_url" class="form-control"
+                        [(ngModel)]="productData.product_img_url">
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
