@@ -1,1 +1,32 @@
-<p>view works!</p>
+<section class="productview">
+    <div class="container">
+        <div class="row" *ngIf="product; else noProductFound">
+            <div class="col-md-6 product-image">
+                <img src={{product.product_img_url}} />
+            </div>
+            <div class="col-md-5 product-content">
+                <div class="details">
+                    <h5>{{product.productname}}</h5>
+                    <h6>{{product.productprice}}</h6>
+                    <!-- <p>{{product.size}}</p> -->
+                    <!-- <h2>{{product.colortype}}</h2> -->
+                    <!-- <button>{{product.color}}</button> -->
+                    <!-- <button class="color">{{product.color2}}</button> -->
+                    <!-- <div class="cardbtn">
+                        <button>{{product.addtocart}}</button>
+                    </div> -->
+                    <div class="content">
+                        <h3>{{product.productInfo}}</h3>
+                    </div>
+                    <!-- <ul>
+                        <li>{{product.para1}}</li>
+                        <li>{{product.para2}}</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        <ng-template #noProductFound>
+            <h2>No Products Found</h2>
+        </ng-template>
+    </div>
+</section>
